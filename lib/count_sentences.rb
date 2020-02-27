@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     new_array = []
-    self.split(" ").collect do |i|
+    self.split.collect do |i|
       if i.end_with?("!") or i.end_with?("?") or i.end_with?(".")
         new_array.push(i)
       end
